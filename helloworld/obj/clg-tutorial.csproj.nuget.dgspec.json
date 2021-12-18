@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/seepgulati/Documents/Git/c#/clg-tutorial/clg-tutorial.csproj": {}
+    "/Users/seepgulati/Documents/Git/c#/clg-tutorial/helloworld/clg-tutorial.csproj": {}
   },
   "projects": {
-    "/Users/seepgulati/Documents/Git/c#/clg-tutorial/clg-tutorial.csproj": {
+    "/Users/seepgulati/Documents/Git/c#/clg-tutorial/helloworld/clg-tutorial.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/seepgulati/Documents/Git/c#/clg-tutorial/clg-tutorial.csproj",
+        "projectUniqueName": "/Users/seepgulati/Documents/Git/c#/clg-tutorial/helloworld/clg-tutorial.csproj",
         "projectName": "clg-tutorial",
-        "projectPath": "/Users/seepgulati/Documents/Git/c#/clg-tutorial/clg-tutorial.csproj",
+        "projectPath": "/Users/seepgulati/Documents/Git/c#/clg-tutorial/helloworld/clg-tutorial.csproj",
         "packagesPath": "/Users/seepgulati/.nuget/packages/",
-        "outputPath": "/Users/seepgulati/Documents/Git/c#/clg-tutorial/obj/",
+        "outputPath": "/Users/seepgulati/Documents/Git/c#/clg-tutorial/helloworld/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/seepgulati/.nuget/NuGet/NuGet.Config"
