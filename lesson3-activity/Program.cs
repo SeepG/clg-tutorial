@@ -19,8 +19,6 @@ Console.WriteLine("$500 is default deposit amount, you can add more if you want"
 Console.WriteLine("Enter a deposit amount\n");
 var deposit = int.Parse((Console.ReadLine() ?? "500"));
 
-
-
 Console.WriteLine("Q. What monthly interest rate you would prefer. Ps.note: 1.0 is default interest rate\n");
 Console.WriteLine("1.0");
 Console.WriteLine("2.3");
@@ -33,7 +31,3 @@ var numberOfMonths = int.Parse((Console.ReadLine() ?? "6"));
 var savings = deposit * Math.Pow(1 + (interestRateAsPercentage / 100), numberOfMonths);
 
 Console.WriteLine(savings);
-
-// var result = 500 * Math.Pow(1 + (1.0 / 100), 6);
-
-Console.WriteLine(result);
