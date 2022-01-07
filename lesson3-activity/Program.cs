@@ -4,30 +4,44 @@ Console.WriteLine(" ** This is your own Savings Calculator **\n");
 
 Console.WriteLine("Let's start saving\n");
 
-Console.ForegroundColor = ConsoleColor.Blue;
-
 Console.WriteLine("=====================================");
 
-// Restore the original console colors.
-Console.ResetColor();
+Console.BackgroundColor = ConsoleColor.DarkCyan;
+
+Console.ForegroundColor = ConsoleColor.White;
 
 Console.WriteLine("Please enter your name\n");
 var accountName = Console.ReadLine()?.Trim();
 
+var initialDeposit = 0.0;
 
-Console.WriteLine("$500 is default deposit amount, you can add more if you want");
-Console.WriteLine("Enter a deposit amount\n");
-var deposit = int.Parse((Console.ReadLine() ?? "500"));
+// var result = myMethod(input1, input2, out outParam);
+// result(which is return value of myMethod)
+// outParam(is an updated value which will be updated in mymethod)
 
-Console.WriteLine("Q. What monthly interest rate you would prefer. Ps.note: 1.0 is default interest rate\n");
+do
+{
+  Console.WriteLine("Please enter a deposit amount\n");
+  var accountDeposit = double.TryParse(Console.ReadLine(), out initialDeposit);
+} while (initialDeposit <= 0.0);
+
+
+Console.WriteLine("Q. What monthly interest rate you would prefer\n");
 Console.WriteLine("1.0");
 Console.WriteLine("2.3");
 Console.WriteLine("3.5");
-var interestRateAsPercentage = double.Parse((Console.ReadLine() ?? "1.0"));
 
-Console.WriteLine("Q. Please enter number of months you would like to save? Ps.note: 6 months is default deposit period\n");
-var numberOfMonths = int.Parse((Console.ReadLine() ?? "6"));
+Console.WriteLine("");
 
-var savings = deposit * Math.Pow(1 + (interestRateAsPercentage / 100), numberOfMonths);
+var interestRateAsPercentage = 0.0;
+double.TryParse(Console.ReadLine(), out interestRateAsPercentage);
 
-Console.WriteLine(savings);
+Console.WriteLine("Q. Please enter number of months you would like to save?\n");
+var numberOfMonths = 0;
+int.TryParse(Console.ReadLine(), out numberOfMonths);
+
+var savings = initialDeposit * Math.Pow(1 + (interestRateAsPercentage / 100), numberOfMonths);
+
+var totalSavings = (Math.Round(savings));
+
+Console.WriteLine($"Here are your $ {totalSavings}");
