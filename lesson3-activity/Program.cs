@@ -21,9 +21,9 @@ var initialDeposit = 0.0;
 
 do
 {
-  Console.WriteLine("Please enter a deposit amount\n");
+  Console.WriteLine("Please enter a deposit amount. P.s Note $100 is minimum default deposit\n");
   var accountDeposit = double.TryParse(Console.ReadLine(), out initialDeposit);
-} while (initialDeposit <= 0.0);
+} while (initialDeposit <= 100);//$100 is default minium deposit
 
 
 Console.WriteLine("Q. What monthly interest rate you would prefer\n");
