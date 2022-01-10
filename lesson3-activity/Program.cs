@@ -15,15 +15,11 @@ var accountName = Console.ReadLine()?.Trim();
 
 var initialDeposit = 0.0;
 
-// var result = myMethod(input1, input2, out outParam);
-// result(which is return value of myMethod)
-// outParam(is an updated value which will be updated in mymethod)
-
 do
 {
   Console.WriteLine("Please enter a deposit amount. P.s Note $100 is minimum default deposit\n");
   var accountDeposit = double.TryParse(Console.ReadLine(), out initialDeposit);
-} while (initialDeposit <= 100);//$100 is default minium deposit
+} while (initialDeposit <= 100);
 
 
 Console.WriteLine("Q. What monthly interest rate you would prefer\n");
