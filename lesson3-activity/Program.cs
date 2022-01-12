@@ -1,8 +1,6 @@
 ﻿Console.WriteLine("");
 
-Console.WriteLine(" ** This is your own Savings Calculator **\n");
-
-Console.WriteLine("Let's start saving\n");
+Console.WriteLine(" ** This is your own Savings Calculator.Let's start saving **\n");
 
 Console.WriteLine("=====================================");
 
@@ -10,34 +8,58 @@ Console.BackgroundColor = ConsoleColor.DarkCyan;
 
 Console.ForegroundColor = ConsoleColor.White;
 
-Console.WriteLine("Please enter your name\n");
-var accountName = Console.ReadLine()?.Trim();
+var accountName = " ";
+
+do
+{
+  Console.WriteLine("Please enter your name.");
+  accountName = Console.ReadLine()?.ToLower().Trim();
+  if (string.IsNullOrEmpty(accountName))
+  {
+    Console.WriteLine("Account name can not be empty.");
+  }
+} while (string.IsNullOrEmpty(accountName));
+
+Console.WriteLine($"Hello {accountName}!");
 
 var initialDeposit = 0.0;
 
 do
 {
-  Console.WriteLine("Please enter a deposit amount. P.s Note $100 is minimum default deposit\n");
-  var accountDeposit = double.TryParse(Console.ReadLine(), out initialDeposit);
-} while (initialDeposit <= 100);
-
-
-Console.WriteLine("Q. What monthly interest rate you would prefer\n");
-Console.WriteLine("1.0");
-Console.WriteLine("2.3");
-Console.WriteLine("3.5");
-
-Console.WriteLine("");
+  Console.WriteLine("Please enter a deposit amount. Note $100 is minimum default deposit.");
+  double.TryParse(Console.ReadLine(), out initialDeposit);
+} while (initialDeposit < 100);
 
 var interestRateAsPercentage = 0.0;
-double.TryParse(Console.ReadLine(), out interestRateAsPercentage);
 
-Console.WriteLine("Q. Please enter number of months you would like to save?\n");
+do
+{
+  Console.WriteLine("Q. Pick monthly interest rate in percentage.Enter 1 for 1.0, 2 for 2.3 or 3 for 3.5.");
+  var interestOption = Console.ReadLine();
+
+  switch (interestOption)
+  {
+    case "1":
+      interestRateAsPercentage = 1.0;
+      break;
+    case "2":
+      interestRateAsPercentage = 2.3;
+      break;
+    case "3":
+      interestRateAsPercentage = 3.5;
+      break;
+    default:
+      Console.WriteLine("Invalid input, please enter one of the options: 1 for 1.0, 2 for 2.3 or 3 for 3.5. ");
+      break;
+  }
+} while (interestRateAsPercentage == 0.0);
+
+Console.WriteLine("Q. Please enter number of months you would like to save?");
 var numberOfMonths = 0;
 int.TryParse(Console.ReadLine(), out numberOfMonths);
 
 var savings = initialDeposit * Math.Pow(1 + (interestRateAsPercentage / 100), numberOfMonths);
 
-var totalSavings = (Math.Round(savings));
+Console.WriteLine("==*********************==");
 
-Console.WriteLine($"Here are your $ {totalSavings}");
+Console.WriteLine($"Here are your rounded savings $ {Math.Round(savings, 2)}");
