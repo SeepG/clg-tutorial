@@ -34,13 +34,8 @@ var interestRateAsPercentage = 0.0;
 
 do
 {
-  Console.WriteLine("Q. Pick monthly interest rate in percentage.Enter 1 for 1.0, 2 for 2.3 or 3 for 3.5 Or X for Exit");
+  Console.WriteLine("Q. Pick monthly interest rate in percentage.Enter 1 for 1.0, 2 for 2.3 or 3 for 3.5");
   var interestOption = Console.ReadLine();
-
-  if (interestOption == "X")
-  {
-    break;
-  }
 
   switch (interestOption)
   {
