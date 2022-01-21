@@ -1,0 +1,15 @@
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson5-activity/bin/Debug/net6.0/lesson5-activity
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson5-activity/bin/Debug/net6.0/lesson5-activity.deps.json
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson5-activity/bin/Debug/net6.0/lesson5-activity.runtimeconfig.json
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson5-activity/bin/Debug/net6.0/lesson5-activity.dll
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson5-activity/bin/Debug/net6.0/ref/lesson5-activity.dll
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson5-activity/bin/Debug/net6.0/lesson5-activity.pdb
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson5-activity/obj/Debug/net6.0/lesson5-activity.csproj.AssemblyReference.cache
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson5-activity/obj/Debug/net6.0/lesson5-activity.GeneratedMSBuildEditorConfig.editorconfig
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson5-activity/obj/Debug/net6.0/lesson5-activity.AssemblyInfoInputs.cache
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson5-activity/obj/Debug/net6.0/lesson5-activity.AssemblyInfo.cs
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson5-activity/obj/Debug/net6.0/lesson5-activity.csproj.CoreCompileInputs.cache
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson5-activity/obj/Debug/net6.0/lesson5-activity.dll
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson5-activity/obj/Debug/net6.0/ref/lesson5-activity.dll
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson5-activity/obj/Debug/net6.0/lesson5-activity.pdb
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson5-activity/obj/Debug/net6.0/lesson5-activity.genruntimeconfig.cache
