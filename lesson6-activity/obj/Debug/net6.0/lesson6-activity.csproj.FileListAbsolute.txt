@@ -1,0 +1,15 @@
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson6-activity/bin/Debug/net6.0/lesson6-activity
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson6-activity/bin/Debug/net6.0/lesson6-activity.deps.json
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson6-activity/bin/Debug/net6.0/lesson6-activity.runtimeconfig.json
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson6-activity/bin/Debug/net6.0/lesson6-activity.dll
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson6-activity/bin/Debug/net6.0/ref/lesson6-activity.dll
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson6-activity/bin/Debug/net6.0/lesson6-activity.pdb
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson6-activity/obj/Debug/net6.0/lesson6-activity.csproj.AssemblyReference.cache
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson6-activity/obj/Debug/net6.0/lesson6-activity.GeneratedMSBuildEditorConfig.editorconfig
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson6-activity/obj/Debug/net6.0/lesson6-activity.AssemblyInfoInputs.cache
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson6-activity/obj/Debug/net6.0/lesson6-activity.AssemblyInfo.cs
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson6-activity/obj/Debug/net6.0/lesson6-activity.csproj.CoreCompileInputs.cache
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson6-activity/obj/Debug/net6.0/lesson6-activity.dll
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson6-activity/obj/Debug/net6.0/ref/lesson6-activity.dll
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson6-activity/obj/Debug/net6.0/lesson6-activity.pdb
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/lesson6-activity/obj/Debug/net6.0/lesson6-activity.genruntimeconfig.cache
