@@ -38,7 +38,7 @@ static void RespondToUserInput( string calculationOption, double num1, double nu
         switch (calculationOption) 
                 {
                         case "a":
-                        Console.WriteLine($"Your result: {num1} + {num2} = " + (num1 + num2));
+                        Console.WriteLine($"Your result: {num1} + {num2} = " + (num1 + num2));                      
                         break;
 
                         case "s":
