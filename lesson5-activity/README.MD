@@ -12,7 +12,7 @@ Allow the user of the application (a course coordinator) to do the following:
 
 - list the courses on offer at the university
 
-- list the courses each student is enrolled on
+- list the courses each student is enrolled on 
 
 - Enrol more students to the university
 
