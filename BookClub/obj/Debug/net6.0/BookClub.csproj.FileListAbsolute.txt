@@ -1,0 +1,15 @@
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/BookClub/bin/Debug/net6.0/BookClub
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/BookClub/bin/Debug/net6.0/BookClub.deps.json
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/BookClub/bin/Debug/net6.0/BookClub.runtimeconfig.json
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/BookClub/bin/Debug/net6.0/BookClub.dll
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/BookClub/bin/Debug/net6.0/ref/BookClub.dll
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/BookClub/bin/Debug/net6.0/BookClub.pdb
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/BookClub/obj/Debug/net6.0/BookClub.csproj.AssemblyReference.cache
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/BookClub/obj/Debug/net6.0/BookClub.GeneratedMSBuildEditorConfig.editorconfig
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/BookClub/obj/Debug/net6.0/BookClub.AssemblyInfoInputs.cache
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/BookClub/obj/Debug/net6.0/BookClub.AssemblyInfo.cs
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/BookClub/obj/Debug/net6.0/BookClub.csproj.CoreCompileInputs.cache
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/BookClub/obj/Debug/net6.0/BookClub.dll
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/BookClub/obj/Debug/net6.0/ref/BookClub.dll
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/BookClub/obj/Debug/net6.0/BookClub.pdb
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/BookClub/obj/Debug/net6.0/BookClub.genruntimeconfig.cache
