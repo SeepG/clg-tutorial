@@ -1,93 +1,96 @@
-﻿    class Program {
-        public static void Main() {
-            ConsoleKeyInfo cki;
-            Console.WriteLine(" ");
-            Console.WriteLine("Welcome to Happy Book Club 😊 📚 \n");
+﻿class Program
+{
+    public static void Main()
+    {
+        ConsoleKeyInfo cki;
+        Console.WriteLine(" ");
+        Console.WriteLine("Welcome to Happy Book Club 😊 📚 \n");
 
-            List<Book> favBooks = SeedBooks();
+        List<Book> favouriteBooks = SeedBooks();
 
-            List<List<Book>> rList = SeedReadingList();
+        List<List<Book>> rList = SeedReadingList();
 
-            List<Member> members = SeedMembers(favBooks,rList);
-           
-           do
-           { 
+        List<Member> members = SeedMembers(favouriteBooks, rList);
+
+        do
+        {
             Console.WriteLine("What would you like to see or do 🔎 ");
             Console.WriteLine(" ");
             Console.ForegroundColor = ConsoleColor.Blue;
 
             Console.WriteLine("Pick your list options below: \n");
-            Console.WriteLine("\t1 - Recommended Books:");
-            Console.WriteLine("\t2 - Members favorite Books");
-            Console.WriteLine("\t3 - Members");
+            Console.WriteLine("\t1 - Show Recommended Books:");
+            Console.WriteLine("\t2 - Show members favorite Books");
+            Console.WriteLine("\t3 - Show existing members");
+            Console.WriteLine("\t4 - Add new Members");
+            Console.WriteLine("\t5 - Add new Recommended Books for members");
+
             Console.WriteLine("\tPress <ESCAPE> (Esc) key to quit or any key to continue\n");
 
             var userInput = Console.ReadLine()!;
 
-            RespondToUserInput(userInput,members);
-        
+            RespondToUserInput(userInput, members);
+
             cki = Console.ReadKey(true);
-           } while (cki.Key != ConsoleKey.Escape);
+        } while (cki.Key != ConsoleKey.Escape);
 
-        }
-            static List<List<Book>> SeedReadingList() {
+    }
+    static List<List<Book>> SeedReadingList()
+    {
 
-            Book freyaBook = new Book("Testing Happiness", "Mina Tyagi");
-            var freyaList = new List<Book>{freyaBook};
-            
-            Book mikhaelBook1 = new Book("Who let the dogs out", "Bow Bow");
-            Book mikhaelBook2 = new Book("The story of my Happylife", "Lol Lol");
-            var mikhaelList = new List<Book>{mikhaelBook1, mikhaelBook2};
+        Book freyaBook = new Book("Testing Happiness", "Mina Tyagi");
+        var freyaList = new List<Book> { freyaBook };
 
-            Book shwethaBook1 = new Book("Eternal Happiness dance", "Sanskari Baccha");
-            Book shwethaBook2 = new Book("Happiness is in travel", "Narendra Modi");
-            Book shwethaBook3 = new Book("Money is ultimate Happiness", "Donald Trump");
+        Book mikhaelBook1 = new Book("Who let the dogs out", "Bow Bow");
+        Book mikhaelBook2 = new Book("The story of my Happylife", "Lol Lol");
+        var mikhaelList = new List<Book> { mikhaelBook1, mikhaelBook2 };
 
-            var shwethaList = new List<Book> {shwethaBook1, shwethaBook2, shwethaBook3};
+        Book shwethaBook1 = new Book("Eternal Happiness dance", "Sanskari Baccha");
+        Book shwethaBook2 = new Book("Happiness is in travel", "Narendra Modi");
+        Book shwethaBook3 = new Book("Money is ultimate Happiness", "Donald Trump");
 
-            var recommendedBooks = new List<List<Book>>{
-                freyaList, mikhaelList, shwethaList };
-            return recommendedBooks;
-            }
-        
-           static List<Book> SeedBooks() {
-            Book favoriteBook1 = new Book("Happy Days", "Nikhil Sharma");
-            Book favoriteBook2 = new Book("Are we really happy?", "Deepak Chatterjee");
-            Book favoriteBook3 = new Book("The endless search for happiness", "Hunh Win Thahn");
+        var shwethaList = new List<Book> { shwethaBook1, shwethaBook2, shwethaBook3 };
 
-            var favoriteBooks = new List<Book>{
-                favoriteBook1, favoriteBook2, favoriteBook3
-            };
-            return favoriteBooks;
-            }
+        var recommendedBooks = new List<List<Book>> { freyaList, mikhaelList, shwethaList };
+        return recommendedBooks;
+    }
 
-            static List<Member> SeedMembers(List<Book> favBooks, List<List<Book>> rList) {
-            Member premiumMember1 = new Member( "Freya", "Pal", favBooks[0], rList[0]);
-            Member premiumMember2 = new Member( "Mikhael", "Gorbachev", favBooks[1] , rList[1]);
-            Member premiumMember3 = new Member( "Shwetha", "Sivaraman", favBooks[2], rList[2]);
+    static List<Book> SeedBooks()
+    {
+        Book favoriteBook1 = new Book("Happy Days", "Nikhil Sharma");
+        Book favoriteBook2 = new Book("Are we really happy?", "Deepak Chatterjee");
+        Book favoriteBook3 = new Book("The endless search for happiness", "Hunh Win Thahn");
 
-            var members = new List<Member>{
-                premiumMember1, premiumMember2, premiumMember3
-            };
+        var favoriteBooks = new List<Book>{favoriteBook1, favoriteBook2, favoriteBook3};
+        return favoriteBooks;
+    }
 
-            return members;
-            }   
+    static List<Member> SeedMembers(List<Book> favBooks, List<List<Book>> rList)
+    {
+        Member premiumMember1 = new Member("freya", "pal", favBooks[0], rList[0]);
+        Member premiumMember2 = new Member("mikhael", "gorbachev", favBooks[1], rList[1]);
+        Member premiumMember3 = new Member("shwetha", "sivaraman", favBooks[2], rList[2]);
 
-        static void RespondToUserInput( string userInput, List<Member> members) {
+        var members = new List<Member>{premiumMember1, premiumMember2, premiumMember3};
+        return members;
+    }
+
+    static void RespondToUserInput(string userInput, List<Member> members)
+    {
         switch (userInput)
-            {
-                case "1": 
+        {
+            case "1":
 
                 foreach (var member in members)
-            {
-                foreach (var book in member.readingList)
                 {
-                  Console.WriteLine($"\t :  {book.title} by {book.author}\n");   
-                }    
-            }
+                    foreach (var book in member.readingList!)
+                    {
+                        Console.WriteLine($"\t :  {book.title} by {book.author}\n");
+                    }
+                }
                 break;
 
-                case "2": 
+            case "2":
 
                 foreach (var member in members)
                 {
@@ -95,25 +98,48 @@
                 }
                 break;
 
-                case "3": 
+            case "3":
 
                 foreach (var member in members)
                 {
                     Console.WriteLine($"\t{member.firstName} {member.lastName}\n");
                 }
                 break;
+            case "4":
+                Console.Write("Enter First name of new member you want to Add\n");
+                var newMemberFirstName = Console.ReadLine()?.Trim();
+                Console.Write("Enter Last name of new member you want to Add\n");
+                var newMemberLastName = Console.ReadLine()?.Trim();
+                var newMember = new Member(newMemberFirstName!, newMemberLastName!);
+                members.Add(newMember!);
+            break;   
 
-               default:
+            case "5":
+                Console.Write("Confirm First name of member for whom you are adding Book\n");
+                var memberFirstName = Console.ReadLine()?.Trim();
+                Console.Write("Confirm Last name of member for whom you are adding Book\n");
+                var memberLastName = Console.ReadLine()?.Trim();
+                var selectedMember = new Member(memberFirstName!, memberLastName!);
+                selectedMember = members.Find(m => m.firstName == memberFirstName && m.lastName == memberLastName);
+            
+                if (selectedMember != null)
+                {
+                Console.Write("Enter Book Title you want to Add\n");
+                var newBookTitle = Console.ReadLine()?.Trim();
+                Console.Write("Enter the Book Author you want to Add\n");
+                var newBookAuthor = Console.ReadLine()?.Trim();
+                var newBook = new Book(newBookTitle!, newBookAuthor!);
+                selectedMember.readingList.Add(newBook);
+                }
+                break;
+            default:
                 Console.WriteLine("Invalid input");
                 break;
-           }   
         }
-
-        
-            
     }
+}
 
-  
+
 
 
 

@@ -3,7 +3,7 @@ class Member {
 
     public string firstName;
     public string lastName;
-    public Book favoriteBook;
+    public Book? favoriteBook;
 
     public  List<Book> readingList;
 
@@ -13,5 +13,9 @@ class Member {
         favoriteBook = favBook;
         readingList = rList;
     }
-    
+    public Member(string fName, string lName){
+        firstName = fName;
+        lastName = lName;
+        readingList = new List<Book>();
+    } 
  }
