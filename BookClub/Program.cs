@@ -6,26 +6,19 @@
         Console.WriteLine(" ");
         Console.WriteLine("Welcome to Happy Book Club 😊 📚 \n");
 
-        List<Book> favouriteBooks = SeedBooks();
+        List<Book> favoriteBooks = SeedBooks();
 
         List<List<Book>> rList = SeedReadingList();
 
-        List<Member> members = SeedMembers(favouriteBooks, rList);
+        List<Member> members = SeedMembers(favoriteBooks, rList);
 
         do
         {
             Console.WriteLine("What would you like to see or do 🔎 ");
             Console.WriteLine(" ");
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
 
-            Console.WriteLine("Pick your list options below: \n");
-            Console.WriteLine("\t1 - Show Recommended Books:");
-            Console.WriteLine("\t2 - Show members favorite Books");
-            Console.WriteLine("\t3 - Show existing members");
-            Console.WriteLine("\t4 - Add new Members");
-            Console.WriteLine("\t5 - Add new Recommended Books for members");
-
-            Console.WriteLine("\tPress <ESCAPE> (Esc) key to quit or any key to continue\n");
+            giveInstructions();
 
             var userInput = Console.ReadLine()!;
 
@@ -61,7 +54,7 @@
         Book favoriteBook2 = new Book("Are we really happy?", "Deepak Chatterjee");
         Book favoriteBook3 = new Book("The endless search for happiness", "Hunh Win Thahn");
 
-        var favoriteBooks = new List<Book>{favoriteBook1, favoriteBook2, favoriteBook3};
+        var favoriteBooks = new List<Book> { favoriteBook1, favoriteBook2, favoriteBook3 };
         return favoriteBooks;
     }
 
@@ -71,7 +64,7 @@
         Member premiumMember2 = new Member("mikhael", "gorbachev", favBooks[1], rList[1]);
         Member premiumMember3 = new Member("shwetha", "sivaraman", favBooks[2], rList[2]);
 
-        var members = new List<Member>{premiumMember1, premiumMember2, premiumMember3};
+        var members = new List<Member> { premiumMember1, premiumMember2, premiumMember3 };
         return members;
     }
 
@@ -106,13 +99,9 @@
                 }
                 break;
             case "4":
-                Console.Write("Enter First name of new member you want to Add\n");
-                var newMemberFirstName = Console.ReadLine()?.Trim();
-                Console.Write("Enter Last name of new member you want to Add\n");
-                var newMemberLastName = Console.ReadLine()?.Trim();
-                var newMember = new Member(newMemberFirstName!, newMemberLastName!);
-                members.Add(newMember!);
-            break;   
+                var newMember = addMember();
+                members.Add(newMember);
+                break;
 
             case "5":
                 Console.Write("Confirm First name of member for whom you are adding Book\n");
@@ -121,21 +110,52 @@
                 var memberLastName = Console.ReadLine()?.Trim();
                 var selectedMember = new Member(memberFirstName!, memberLastName!);
                 selectedMember = members.Find(m => m.firstName == memberFirstName && m.lastName == memberLastName);
-            
+
                 if (selectedMember != null)
                 {
-                Console.Write("Enter Book Title you want to Add\n");
-                var newBookTitle = Console.ReadLine()?.Trim();
-                Console.Write("Enter the Book Author you want to Add\n");
-                var newBookAuthor = Console.ReadLine()?.Trim();
-                var newBook = new Book(newBookTitle!, newBookAuthor!);
-                selectedMember.readingList.Add(newBook);
+                    Console.Write("Enter Book Title you want to Add\n");
+                    var newBookTitle = Console.ReadLine()?.Trim();
+                    Console.Write("Enter the Book Author you want to Add\n");
+                    var newBookAuthor = Console.ReadLine()?.Trim();
+                    var newBook = new Book(newBookTitle!, newBookAuthor!);
+                    selectedMember.readingList.Add(newBook);
                 }
                 break;
             default:
                 Console.WriteLine("Invalid input");
                 break;
         }
+    }
+
+    static void giveInstructions()
+    {
+        Console.WriteLine("Pick your list options below: \n");
+        Console.WriteLine("\t1 - Show Recommended Books:");
+        Console.WriteLine("\t2 - Show members favorite Books");
+        Console.WriteLine("\t3 - Show existing members");
+        Console.WriteLine("\t4 - Add new Members");
+        Console.WriteLine("\t5 - Add new Recommended Books for members\n");
+        Console.WriteLine("\tPress <ESCAPE> (Esc) key to quit or any key to continue\n");
+    }
+
+    static Member addMember()
+    {
+        Console.Write("Enter First name of new member you want to Add\n");
+        var newMemberFirstName = Console.ReadLine()?.Trim();
+        Console.Write("Enter Last name of new member you want to Add\n");
+        var newMemberLastName = Console.ReadLine()?.Trim();
+        var newMember = new Member(newMemberFirstName!, newMemberLastName!);
+        newMember.favoriteBook = addFavoriteBook();
+        return newMember;
+    }
+
+    static Book addFavoriteBook()
+    {
+        Console.Write("Enter Book Title you want to Add\n");
+        var favoriteBookTitle = Console.ReadLine()?.Trim();
+        Console.Write("Enter the Book Author you want to Add\n");
+        var favoriteBookAuthor = Console.ReadLine()?.Trim();
+        return new Book(favoriteBookTitle!, favoriteBookAuthor!);
     }
 }
 
