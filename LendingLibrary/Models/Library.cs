@@ -1,3 +1,4 @@
+    using System.Collections.Generic;
    namespace LendingLibrary.Models; 
     public class Library {
     
@@ -70,4 +71,19 @@
                 album.ShowAlbums();
             }
         }
+
+     internal void SeedBorrowedItemsAndLenders()
+    {
+        Dictionary<string, string> borrowedItems = new Dictionary<string, string>();
+        borrowedItems.Add("Harry Potter", "Samunel Joeseph");
+        borrowedItems.Add("History of Time", "Rishabh Seth");
+        borrowedItems.Add("Who let the cat out", "Narcy Jen");
+        borrowedItems.Add("Life is great", "Mahowk Theming");
+
+    Console.WriteLine($"{Name} - Currently borrowed items:\n");
+    foreach (var item in borrowedItems)
+    {
+        Console.WriteLine("\t Borrowed Item: " + item.Key + " -  Borrowed by: "+ item.Value);
+    }
+    }
 }

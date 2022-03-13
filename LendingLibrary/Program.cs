@@ -16,6 +16,8 @@ namespace LendingLibrary {
             library.SeedAlbums();
             Console.WriteLine(" ");
             library.SeedAudioBooks();
+            Console.WriteLine(" ");
+            library.SeedBorrowedItemsAndLenders();
         }
     }
 }
