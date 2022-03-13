@@ -1,0 +1,15 @@
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/LendingLibrary/bin/Debug/net6.0/LendingLibrary
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/LendingLibrary/bin/Debug/net6.0/LendingLibrary.deps.json
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/LendingLibrary/bin/Debug/net6.0/LendingLibrary.runtimeconfig.json
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/LendingLibrary/bin/Debug/net6.0/LendingLibrary.dll
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/LendingLibrary/bin/Debug/net6.0/ref/LendingLibrary.dll
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/LendingLibrary/bin/Debug/net6.0/LendingLibrary.pdb
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/LendingLibrary/obj/Debug/net6.0/LendingLibrary.csproj.AssemblyReference.cache
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/LendingLibrary/obj/Debug/net6.0/LendingLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/LendingLibrary/obj/Debug/net6.0/LendingLibrary.AssemblyInfoInputs.cache
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/LendingLibrary/obj/Debug/net6.0/LendingLibrary.AssemblyInfo.cs
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/LendingLibrary/obj/Debug/net6.0/LendingLibrary.csproj.CoreCompileInputs.cache
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/LendingLibrary/obj/Debug/net6.0/LendingLibrary.dll
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/LendingLibrary/obj/Debug/net6.0/ref/LendingLibrary.dll
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/LendingLibrary/obj/Debug/net6.0/LendingLibrary.pdb
+/Users/seepgulati/Documents/Git/c#/clg-tutorial-csharp/LendingLibrary/obj/Debug/net6.0/LendingLibrary.genruntimeconfig.cache
