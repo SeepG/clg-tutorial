@@ -1,4 +1,7 @@
-﻿class Program
+﻿using BookClub.Models;
+
+namespace BookClub {
+class Program
 {
     public static void Main()
     {
@@ -156,10 +159,8 @@
         Console.Write("Enter the Book Author you want to Add\n");
         var favoriteBookAuthor = Console.ReadLine()?.Trim();
         return new Book(favoriteBookTitle!, favoriteBookAuthor!);
+        }
     }
 }
-
-
-
 
 

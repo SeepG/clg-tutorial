@@ -1,4 +1,5 @@
 
+namespace BookClub.Models {
 class Member { 
 
     public string firstName;
@@ -17,5 +18,6 @@ class Member {
         firstName = fName;
         lastName = lName;
         readingList = new List<Book>();
-    } 
- }
+        } 
+    }
+}
